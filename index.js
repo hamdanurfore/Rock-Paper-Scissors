@@ -6,13 +6,16 @@ var wins = 0;
 var losses = 0;
 var ties = 0;
 for (var i = 0; i < 10; i++) {
- // Randomly chooses a choice from the options array. This is the Computer's guess.
- var computerGuess = computerChoices[Math.floor(math.random() * computerChoices.length)];
+    // Randomly chooses a choice from the options array. This is the Computer's guess.
+    var computerGuess = computerChoices[Math.floor(math.random() * computerChoices.length)];
     // Collect the user's response and convert to lower case.
-var userGuess = prompt("Enter r, p, or s to compete!");
-userGuess = userGuess.toLowerCase();
+    var userGuess = prompt("Enter r, p, or s to compete!");
+    userGuess = userGuess.toLowerCase();
     // Only run game logic if user chose a valid option
+    if (userGuess === "r" || userGuess === "p" || userGuess === "s") {
         // Win/lose conditions:
+    }
+
 }
 
 // When the game is over, alert the totals to the user. We can use the \n character to make a line break.
