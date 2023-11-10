@@ -7,7 +7,7 @@ var losses = 0;
 var ties = 0;
 for (var i = 0; i < 10; i++) {
     // Randomly chooses a choice from the options array. This is the Computer's guess.
-    var computerGuess = computerChoices[Math.floor(math.random() * computerChoices.length)];
+    var computerGuess = computerChoices[math.floor(math.random() * computerChoices.length)];
     // Collect the user's response and convert to lower case.
     var userGuess = prompt("Enter r, p, or s to compete!");
     userGuess = userGuess.toLowerCase();
