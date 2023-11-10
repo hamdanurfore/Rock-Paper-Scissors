@@ -34,3 +34,4 @@ for (var i = 0; i < 10; i++) {
 }
 
 // When the game is over, alert the totals to the user. We can use the \n character to make a line break.
+alert("You've won: " + wins + " time(s)" + "\nYou've tied: " + ties + " time(s)" + "\nYou've lost: " + losses + " time(s)");
