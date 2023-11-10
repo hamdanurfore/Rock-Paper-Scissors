@@ -13,7 +13,22 @@ for (var i = 0; i < 10; i++) {
     userGuess = userGuess.toLowerCase();
     // Only run game logic if user chose a valid option
     if (userGuess === "r" || userGuess === "p" || userGuess === "s") {
+        alert("The computer's guess was " + computerGuess);
         // Win/lose conditions:
+        if (userGuess === computerGuess) {
+            ties++;
+            alert("Okay, You've tied with the computer " + computerGuess + " time(s).");
+        } else if (
+            (userGuess === "r" && computerGuess === "s") ||
+            (userGuess === "s" && computerGuess === "p") ||
+            (userGuess === "p" && computerGuess === "r")
+        ) {
+            wins++;
+            alert("Woah! You've won " + wins + " time(s).");
+        } else {
+            losses++;
+            alert("Oh no! You've lost " + " time(s).");
+        }
     }
 
 }
